@@ -45,11 +45,11 @@
 		nextMidnight.setHours(24, 0, 0, 0);
 
 		var msec = nextMidnight.valueOf() - now.valueOf();
-		var hh = Math.floor(msec / 1000 / 60 / 60);
+		var hh = 0;
 		msec -= hh * 1000 * 60 * 60;
-		var mm = Math.floor(msec / 1000 / 60);
+		var mm = 0;
 		msec -= mm * 1000 * 60;
-		var ss = Math.floor(msec / 1000);
+		var ss = 1;
 		msec -= ss * 1000;
 
 		return `${numberTo2Digit(hh)}:${numberTo2Digit(mm)}:${numberTo2Digit(ss)}`;
